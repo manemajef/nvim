@@ -1,6 +1,6 @@
 return {
   "folke/tokyonight.nvim",
-  lazy = false,  -- Load the theme but don't apply it
+  lazy = false, -- Load the theme but don't apply it
   priority = 1000,
   opts = {
     style = "night", -- Options: storm, moon, night, day
@@ -13,7 +13,6 @@ return {
   config = function(_, opts)
     require("tokyonight").setup(opts)
     -- Don't set colorscheme here - controlled by colorscheme.lua
-    
     -- Custom highlight overrides (only apply when this theme is active)
     vim.api.nvim_create_autocmd("ColorScheme", {
       pattern = "tokyonight",
