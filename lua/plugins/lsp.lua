@@ -32,11 +32,14 @@ return {
               typeCheckingMode = "basic",
             },
           },
-          python = {
-            pythonPath = vim.fn.trim(vim.fn.system("uv python find")),
-            venvPath = vim.fn.getcwd(),
-            venv = ".venv",
-          },
+          python = (function()
+            local venv_python = vim.fn.getcwd() .. "/.venv/bin/python"
+            local python_path = vim.fn.filereadable(venv_python) == 1 and venv_python or vim.fn.exepath("python")
+
+            return {
+              pythonPath = python_path,
+            }
+          end)(),
         },
       })
     end,
