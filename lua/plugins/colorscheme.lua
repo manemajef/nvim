@@ -9,4 +9,5 @@ return {
       colorscheme = ACTIVE_THEME,
     },
   },
+  { import = "plugins.themes." .. ACTIVE_THEME },
 }
