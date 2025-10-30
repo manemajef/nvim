@@ -9,6 +9,5 @@ for i in range(0,10):
 
 def eat_ass():
     print("eat my ass")
-eatAss()
 
 
