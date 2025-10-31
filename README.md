@@ -1,10 +1,12 @@
-# 💤 LazyVim
+# Jeff's LazyVim
 
-# hey
+this is my LazyVim config. u can easily clone using the following command:
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
-
-```python
-print("hey")
+```bash
+git clone "https://github.com/manemajef/nvim"
+cd nvim && rm -rf .git
+rm -rf arhicve
+rm -rf tests
+# optional - make this the config
+cd ../ && mv ~/.config/nvim ~/.config/nvim.bak mv nvim ~/.config/nvim
 ```

@@ -16,3 +16,10 @@ map("v", "D", '"_d', { noremap = true, silent = true })
 -- Resize window
 map("n", "<C-S-Up>", "<cmd>resize +2<cr>", { desc = "Increase Window Height" })
 map("n", "<C-S-Down>", "<cmd>resize -2<cr>", { desc = "Decrease Window Height" })
+
+-- reload
+map("n", "<leader>rr", function()
+  -- Re-source init.lua (reloads your config)
+  dofile(vim.env.MYVIMRC)
+  print("✅ Reloaded init.lua")
+end, { desc = "Reload init.lua" })
