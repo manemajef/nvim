@@ -7,3 +7,5 @@ vim.g.snacks_animate = true
 -- Connect Neovim clipboard to system clipboard
 vim.opt.clipboard = "unnamedplus"
 -- vim.lsp.inlay_hint.enable(true)
+vim.o.formatexpr = nil
+vim.b.autoformat = true

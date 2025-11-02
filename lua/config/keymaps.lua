@@ -16,10 +16,9 @@ map("v", "D", '"_d', { noremap = true, silent = true })
 -- Resize window
 map("n", "<C-S-Up>", "<cmd>resize +2<cr>", { desc = "Increase Window Height" })
 map("n", "<C-S-Down>", "<cmd>resize -2<cr>", { desc = "Decrease Window Height" })
-
--- reload
-map("n", "<leader>rr", function()
-  -- Re-source init.lua (reloads your config)
-  dofile(vim.env.MYVIMRC)
-  print("✅ Reloaded init.lua")
-end, { desc = "Reload init.lua" })
+-- map("n", "<leader>rp", ":w | terminal python3 % <CR>", { desc = "run python3" })
+map("n", "<leader>rp", function()
+  vim.cmd("w") -- save file
+  local file = vim.fn.expand("%")
+  Snacks.terminal("python3 " .. file, { cwd = LazyVim.root(), keep = true })
+end, { desc = "Run Python in Snacks Terminal" })
