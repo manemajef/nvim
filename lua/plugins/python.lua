@@ -15,6 +15,8 @@ return {
                 typeCheckingMode = "basic",
                 autoSearchPaths = true,
                 useLibraryCodeForTypes = true,
+                reportUnusedImport = "none",
+                reportUnusedVariable = "none",
               },
             },
           },
