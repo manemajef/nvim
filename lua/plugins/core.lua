@@ -1,8 +1,8 @@
 return {
-  {
-    "rafamadriz/friendly-snippets",
-    enabled = false,
-  },
+  -- {
+  --   "rafamadriz/friendly-snippets",
+  --   enabled = false,
+  -- },
   {
     "folke/which-key.nvim",
     opts = {
@@ -11,5 +11,6 @@ return {
       },
     },
   },
+
   -- { "MeanderingProgrammer/render-markdown.nvim", enabled = false },
 }

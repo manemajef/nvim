@@ -20,6 +20,9 @@ return {
               },
             },
           },
+          capabilities = {
+            offsetEncoding = { "utf-8" },
+          },
         },
 
         -- Keep ruff for formatting/linting

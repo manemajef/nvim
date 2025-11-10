@@ -18,4 +18,18 @@ return {
       },
     },
   },
+
+  -- Marksman with diagnostics disabled
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        marksman = {
+          handlers = {
+            ["textDocument/publishDiagnostics"] = function() end,
+          },
+        },
+      },
+    },
+  },
 }

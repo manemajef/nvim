@@ -6,6 +6,7 @@ return {
       inlay_hints = {
         enabled = false,
       },
+      auto_hover = false,
       -- Add other general LSP settings here
     },
   },

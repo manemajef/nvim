@@ -1,8 +1,8 @@
 local ACTIVE_THEME = "tokyonight"
 return {
   -- { "ellisonleao/gruvbox.nvim" },
-  { "EdenEast/nightfox.nvim" },
-  { "maxmx03/solarized.nvim" },
+  -- { "EdenEast/nightfox.nvim" },
+  -- { "maxmx03/solarized.nvim" },
   -- { import = "plugins.themes.tokyonight" },
   {
     "LazyVim/LazyVim",
