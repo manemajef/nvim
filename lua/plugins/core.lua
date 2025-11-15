@@ -2,7 +2,9 @@ local ACTIVE_THEME = "tokyonight"
 return {
   -- {
   --   "rafamadriz/friendly-snippets",
-  --   enabled = false,
+  --   opts = {
+  --     exclude = { "markdown" },
+  --   },
   -- },
   {
     "folke/which-key.nvim",
