@@ -1,5 +1,6 @@
 return {
   "nvim-lualine/lualine.nvim",
+  cond = not vim.g.vscode, -- Disable in VSCode
   opts = function()
     local icons = LazyVim.config.icons -- ✅ required for diagnostics symbols
 

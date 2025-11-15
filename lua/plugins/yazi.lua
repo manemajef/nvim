@@ -2,6 +2,7 @@ return {
   ---@type LazySpec
   {
     "mikavilpas/yazi.nvim",
+    cond = not vim.g.vscode, -- Disable in VSCode
     version = "*", -- use the latest stable version
     event = "VeryLazy",
     dependencies = {
