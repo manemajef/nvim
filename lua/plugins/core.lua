@@ -1,3 +1,4 @@
+local ACTIVE_THEME = "tokyonight"
 return {
   -- {
   --   "rafamadriz/friendly-snippets",
@@ -12,5 +13,11 @@ return {
     },
   },
 
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = ACTIVE_THEME,
+    },
+  },
   -- { "MeanderingProgrammer/render-markdown.nvim", enabled = false },
 }

@@ -4,11 +4,11 @@ return {
   -- { "EdenEast/nightfox.nvim" },
   -- { "maxmx03/solarized.nvim" },
   -- { import = "plugins.themes.tokyonight" },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = ACTIVE_THEME,
-    },
-  },
+  -- {
+  --   "LazyVim/LazyVim",
+  --   opts = {
+  --     colorscheme = ACTIVE_THEME,
+  --   },
+  -- },
   -- { import = "plugins.themes." .. ACTIVE_THEME },
 }
