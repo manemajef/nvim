@@ -1,6 +1,6 @@
 # Jeff's LazyVim
 
-this is my LazyVim config. u can easily clone using the following command:
+This is my LazyVim config. u can easily clone using the following command:
 
 ```bash
 git clone "https://github.com/manemajef/nvim"
@@ -10,3 +10,7 @@ rm -rf tests
 # optional - make this the config
 cd ../ && mv ~/.config/nvim ~/.config/nvim.bak mv nvim ~/.config/nvim
 ```
+
+$$
+f(x) = z_{1/2}
+$$
