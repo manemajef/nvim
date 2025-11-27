@@ -1,17 +1,24 @@
-import numpy as np
-import sympy
+class Food:
+    def __init__(self, name):
+        self.name = name
+        self.is_eaten = False
 
-for i in range(10):
-    print(i + 1)
-mrt = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
-print("hey")
-dic = {"ass": "Ass", "leg": "Leg", "bitch": "Bitch"}
-
-
-def set_number(x):
-    return x + 1
+    def eat(self):
+        print(f"eating {self.name}...")
+        self.is_eaten = True
 
 
-s = "s"
+class Ass(Food):
+    def __init__(self, gender, race):
+        Food.__init__(self, "ass")
+        self.gender = gender
+        self.race = race
 
-s = set_number(9)
+
+def eat_ass():
+    ass = Ass("male", "latin")
+    ass.eat()
+
+
+if __name__ == "__main__":
+    eat_ass()
