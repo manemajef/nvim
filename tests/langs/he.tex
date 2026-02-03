@@ -1,0 +1,30 @@
+% !TeX program = lualatex
+\documentclass[11pt, a4paper]{article}
+\usepackage{fontspec}
+\usepackage[bidi=basic]{babel}
+\babelprovide[main, import]{hebrew}
+\babelprovide[import, onchar=ids fonts]{english}
+\babelfont[hebrew]{rm}[Renderer=Harfbuzz]{David CLM}
+\babelfont[english]{rm}{Latin Modern Roman}
+\usepackage{amsmath, amssymb}
+% Bullet fix
+\usepackage{enumitem, graphicx}
+\renewcommand{\labelitemi}{\raisebox{0.2ex}{\scalebox{0.6}{$\bullet$}}}
+\newcommand{\en}[1]{\foreignlanguage{english}{#1}}
+\newenvironment{english}
+  {\begin{otherlanguage}{english}}
+  {\end{otherlanguage}}
+
+\setcounter{secnumdepth}{0}
+\title{תבנית עברית}
+\author{}
+\date{}
+\begin{document}
+\section{בדיקה}
+האם הכל עובד? Looks like it does.
+for all of you cunts, please note: \[ f(x) = \sum_{i=1}^{\infty} (x_i - \bar{x})^2 \]
+
+עכשיו בו נבדוק אינליין: $f(x) = x^2$ זה טקסט פנימי
+
+
+\end{document}

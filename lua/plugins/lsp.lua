@@ -2,12 +2,26 @@ return {
   {
     "neovim/nvim-lspconfig",
     opts = {
-      -- Disable inlay hints globally
       inlay_hints = {
         enabled = false,
       },
       auto_hover = false,
-      -- Add other general LSP settings here
+      servers = {
+        marksman = {
+          handlers = {
+            ["textDocument/publishDiagnostics"] = function() end,
+          },
+        },
+      },
     },
+  },
+
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    ft = { "markdown" },
+    build = function()
+      vim.fn["mkdp#util#install"]()
+    end,
   },
 }
